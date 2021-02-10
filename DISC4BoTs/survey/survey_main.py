@@ -7,6 +7,7 @@ sys.path.append(os.path.abspath(os.path.join('..', 'DISC4BoTs')))
 from PythonClient import airsim
 from scenario import Scenario
 from RepeatedTimer import RepeatedTimer
+from data_testing import test_data
 
 import pandas as pd
 import random
@@ -90,6 +91,8 @@ def main():
     sim_time_factor = int(config_object.get("SETTINGS", "sim_time_factor"))
     # The malicious behaviour type 
     anomaly_type = config_object.get("SETTINGS", "anomaly_type")
+    # If True, after getting the data it will get tested and updated by 'test.py' script
+    active_data_test = config_object.get("SETTINGS", "active_data_test")
 
     # Time until next_action() is called again and the drones' route is recalculated
     update_cycle_time = 0.25 / sim_time_factor
@@ -218,6 +221,9 @@ def main():
     # Write the data to the output file
     data_df = pd.DataFrame.from_dict(data)
     data_df.to_csv(output_file_name, index=False)
+
+    if active_data_test == "True":
+        test_data(output_file_name)
 
 
 if __name__ == '__main__':
