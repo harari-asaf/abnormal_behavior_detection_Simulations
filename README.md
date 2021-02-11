@@ -61,9 +61,52 @@ When the simulation ends, the generated data file should be located (if not conf
         └── scenario.py            <- Abstract class of a general scenario
     
  ## Examples
- These are examples for post-run simulations for each of the different scenarios. The black lines represent a regular drones' route, while the red lines represent a malicious drone's route.
- Anomaly Types:
+ These are examples for run simulations for each of the different scenarios (x5 speed). The black lines represent a regular drones' route, while the red lines represent a malicious drone's route.
+ 
+ Anomaly Types can be configured in the config file. The types are:
  #### shift
+    When shift anomaly type is activated, one of the drones will start moving towards a random very far away point, causing it to move on a straight line.
  #### Random
+    When random anomaly type is activated, one of the drones will start moving towards a point which is randomaly re-chosen few times a second.
  #### path
+    When path anomaly type is activated, one of the drones will start moving on a random path, from one point to another.
+ 
+ "none" anomaly type can be chosen. If so, no anomaly will be activated.
+ 
  ### Avoindance
+ Example of how to run the simulation + shift anomaly:
+ ![](https://im7.ezgif.com/tmp/ezgif-7-a25503a4ec45.gif)
+ 
+ Random anomaly:
+ ![](https://im7.ezgif.com/tmp/ezgif-7-a25503a4ec45.gif)
+ 
+ Path anomaly:
+ ![](https://im7.ezgif.com/tmp/ezgif-7-49f67c0dbedd.gif)
+ 
+ 
+ ### Followpath
+ Shift anomaly:
+![](https://im7.ezgif.com/tmp/ezgif-7-a798c6d74d4a.gif)
+
+ Random anomaly:
+![](https://im7.ezgif.com/tmp/ezgif-7-d56221170405.gif)
+ 
+ Path anoamly:
+![](https://im7.ezgif.com/tmp/ezgif-7-af88bc039872.gif)
+ 
+ 
+ ### Simple
+ Shift anomaly:
+ 
+ Random anomaly:
+ 
+ Path anoamly:
+ 
+ 
+ ### Survey
+ Shift anomaly:
+ 
+ Random anomaly:
+ 
+ Path anoamly:
+ 
