@@ -108,8 +108,12 @@ When the simulation ends, the generated data file should be located (if not conf
  
  ### Survey
  Shift anomaly:
- 
+![](https://im7.ezgif.com/tmp/ezgif-7-aee52744d30c.gif)
+
  Random anomaly:
+![](https://im7.ezgif.com/tmp/ezgif-7-f7e4f44517af.gif)
  
  Path anoamly:
+![](https://im7.ezgif.com/tmp/ezgif-7-dcfc90cf0e3f.gif)
+
  
