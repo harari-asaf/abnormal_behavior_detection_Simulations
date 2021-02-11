@@ -2,7 +2,7 @@
 Airsim-based drones flying simulations for different scenarios, including malicious behaviours
 
 ## Getting Started
-First of all, make sure you have downloaded [Airsim] (https://github.com/microsoft/AirSim), you got Unreal engine on your computer, and the [Blocks Enviroment] (https://microsoft.github.io/AirSim/unreal_blocks/) is set up.
+First of all, make sure you have downloaded [Airsim](https://github.com/microsoft/AirSim), you got Unreal engine on your computer, and the [Blocks Enviroment(https://microsoft.github.io/AirSim/unreal_blocks/) is set up.
 
 ## Project Organization
 
