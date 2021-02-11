@@ -5,7 +5,11 @@ Airsim-based drones flying simulations for different scenarios, including malici
 First of all, make sure you have downloaded [Airsim](https://github.com/microsoft/AirSim), you got Unreal engine on your computer, and the [Blocks Enviroment](https://microsoft.github.io/AirSim/unreal_blocks/) is set up.
 
 Open the Blocks enviroment. It should look like this:
-![BlocksEnviroment](https://pasteboard.co/JNSi4Cn.png)
+![BlocksEnviroment]![sc1](https://user-images.githubusercontent.com/60989064/107655204-029d0c00-6c8c-11eb-8929-e678b6461758.png)
+It is recommended to remove all objects to avoid collisions.
+
+It is recommended to change the Perspective field to Top (click Perspective -> top).
+
 
 ## Project Organization
 
