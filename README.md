@@ -16,7 +16,11 @@ It is recommended to change the Perspective field to Top (click Perspective -> t
 
 ![](https://im5.ezgif.com/tmp/ezgif-5-409bc1e4e73e.gif)
 
+Now, the project can be run. Choose the Scenario you want to run. You can change its configuration file before running if it is desirable.
+First, start playing the simulation by clicking: Click to expand toolbar -> Play. (If an error saying "There were no compatible vehicles created for current SimMode! Check your settings.json." pops, you can ignore it).
+After doing so, run the main file of the scenario.
 
+When the simulation ends, the generated data file should be located (if not configurated differently) in the data folder. 
 
 ## Project Organization
 
@@ -56,3 +60,10 @@ It is recommended to change the Perspective field to Top (click Perspective -> t
         ├── RepeatedTimer      <- Helper class used for generating the data
         └── scenario.py            <- Abstract class of a general scenario
     
+ ## Examples
+ These are examples for post-run simulations for each of the different scenarios. The black lines represent a regular drones' route, while the red lines represent a malicious drone's route.
+ Anomaly Types:
+ #### shift
+ #### Random
+ #### path
+ ### Avoindance
