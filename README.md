@@ -65,55 +65,67 @@ When the simulation ends, the generated data file should be located (if not conf
  
  Anomaly Types can be configured in the config file. The types are:
  #### shift
-    When shift anomaly type is activated, one of the drones will start moving towards a random very far away point, causing it to move on a straight line.
+   When shift anomaly type is activated, one of the drones will start moving towards a random very far away point, causing it to move on a straight line.
  #### Random
-    When random anomaly type is activated, one of the drones will start moving towards a point which is randomaly re-chosen few times a second.
+   When random anomaly type is activated, one of the drones will start moving towards a point which is randomaly re-chosen few times a second.
  #### path
-    When path anomaly type is activated, one of the drones will start moving on a random path, from one point to another.
+   When path anomaly type is activated, one of the drones will start moving on a random path, from one point to another.
  
  "none" anomaly type can be chosen. If so, no anomaly will be activated.
  
  ### Avoindance
  Example of how to run the simulation + shift anomaly:
+ 
  ![](https://im7.ezgif.com/tmp/ezgif-7-a25503a4ec45.gif)
  
  Random anomaly:
+ 
  ![](https://im7.ezgif.com/tmp/ezgif-7-a25503a4ec45.gif)
  
  Path anomaly:
+ 
  ![](https://im7.ezgif.com/tmp/ezgif-7-49f67c0dbedd.gif)
  
  
  ### Followpath
  Shift anomaly:
+ 
 ![](https://im7.ezgif.com/tmp/ezgif-7-a798c6d74d4a.gif)
 
  Random anomaly:
+ 
 ![](https://im7.ezgif.com/tmp/ezgif-7-d56221170405.gif)
  
  Path anoamly:
+ 
 ![](https://im7.ezgif.com/tmp/ezgif-7-af88bc039872.gif)
  
  
  ### Simple
  Shift anomaly:
+ 
 ![](https://im7.ezgif.com/tmp/ezgif-7-be21353eb145.gif)
  
  Random anomaly:
+ 
 ![](https://im7.ezgif.com/tmp/ezgif-7-ec4105d1ca32.gif)
  
  Path anoamly:
+ 
  ![](https://im7.ezgif.com/tmp/ezgif-7-2c7f5fc2cf63.gif)
  
  
  ### Survey
  Shift anomaly:
+ 
 ![](https://im7.ezgif.com/tmp/ezgif-7-aee52744d30c.gif)
 
  Random anomaly:
+ 
 ![](https://im7.ezgif.com/tmp/ezgif-7-f7e4f44517af.gif)
  
  Path anoamly:
+ 
 ![](https://im7.ezgif.com/tmp/ezgif-7-dcfc90cf0e3f.gif)
 
  
