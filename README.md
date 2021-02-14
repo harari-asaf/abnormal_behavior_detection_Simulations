@@ -90,42 +90,42 @@ When the simulation ends, the generated data file should be located (if not conf
  ### Followpath
  Shift anomaly:
  
-![](https://im7.ezgif.com/tmp/ezgif-7-a798c6d74d4a.gif)
+![68747470733a2f2f696d372e657a6769662e636f6d2f746d702f657a6769662d372d6137393863366437346434612e676966](https://user-images.githubusercontent.com/60989064/107873858-45462a80-6ebe-11eb-997d-5921e0e879eb.gif)
 
  Random anomaly:
  
-![](https://im7.ezgif.com/tmp/ezgif-7-d56221170405.gif)
+ ![68747470733a2f2f696d372e657a6769662e636f6d2f746d702f657a6769662d372d6435363232313137303430352e676966](https://user-images.githubusercontent.com/60989064/107874042-7115e000-6ebf-11eb-8829-74752bd4afa9.gif)
  
  Path anoamly:
  
-![](https://im7.ezgif.com/tmp/ezgif-7-af88bc039872.gif)
+ ![68747470733a2f2f696d372e657a6769662e636f6d2f746d702f657a6769662d372d6166383862633033393837322e676966](https://user-images.githubusercontent.com/60989064/107874009-4af04000-6ebf-11eb-8c1b-1fc79f2a7254.gif)
  
  
  ### Simple
- Shift anomaly:
+ Shift anomaly: 
  
-![](https://im7.ezgif.com/tmp/ezgif-7-be21353eb145.gif)
- 
+ ![68747470733a2f2f696d372e657a6769662e636f6d2f746d702f657a6769662d372d6265323133353365623134352e676966](https://user-images.githubusercontent.com/60989064/107874027-5e9ba680-6ebf-11eb-97d7-980a6b3019f3.gif)
+
  Random anomaly:
  
-![](https://im7.ezgif.com/tmp/ezgif-7-ec4105d1ca32.gif)
- 
+![68747470733a2f2f696d372e657a6769662e636f6d2f746d702f657a6769662d372d6563343130356431636133322e676966](https://user-images.githubusercontent.com/60989064/107874063-8db21800-6ebf-11eb-9d9e-ff3b7e92b90f.gif)
+
  Path anoamly:
  
- ![](https://im7.ezgif.com/tmp/ezgif-7-2c7f5fc2cf63.gif)
- 
+ ![68747470733a2f2f696d372e657a6769662e636f6d2f746d702f657a6769662d372d3263376635666332636636332e676966](https://user-images.githubusercontent.com/60989064/107873814-fd270800-6ebd-11eb-8e41-4e3bd471b366.gif)
+
  
  ### Survey
  Shift anomaly:
  
-![](https://im7.ezgif.com/tmp/ezgif-7-aee52744d30c.gif)
+ ![68747470733a2f2f696d372e657a6769662e636f6d2f746d702f657a6769662d372d6165653532373434643330632e676966](https://user-images.githubusercontent.com/60989064/107873860-47a88480-6ebe-11eb-9adf-ce994883a318.gif)
 
  Random anomaly:
  
-![](https://im7.ezgif.com/tmp/ezgif-7-f7e4f44517af.gif)
+ ![68747470733a2f2f696d372e657a6769662e636f6d2f746d702f657a6769662d372d6637653466343435313761662e676966](https://user-images.githubusercontent.com/60989064/107874073-a6bac900-6ebf-11eb-8e59-f4ad750acd60.gif)
  
  Path anoamly:
  
-![](https://im7.ezgif.com/tmp/ezgif-7-dcfc90cf0e3f.gif)
-
+ ![68747470733a2f2f696d372e657a6769662e636f6d2f746d702f657a6769662d372d6463666339306366306533662e676966](https://user-images.githubusercontent.com/60989064/107873952-d2897f00-6ebe-11eb-979c-e0f51f5a6f53.gif)
+ 
  
