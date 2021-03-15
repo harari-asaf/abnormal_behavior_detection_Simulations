@@ -9,7 +9,7 @@
     - Between iterations, drones go to their new initial location.
     if this part was recorded in the data, this script deletes it.
     - if a collision has happened, and it affects the drone's behaviour,
-    it is updated and the drone is signed as a malicious drone.
+    the iteration is removed.
 
     After making these changes, the data is rewriten to the input file.
 
@@ -80,7 +80,11 @@ def test_data(input_file_name):
         # Part 2 - Remove data at the end of iteration which should have not be recorded
         # If there is a dramatic change in the drones' location, then it is a part of their
         # relocation as a preparation to the next iteration. this part should be deleted.
-        for iter_i, iteration in enumerate(reader_by_iterations_updated):
+
+        #counting the valid iterations
+        iteration_count = 0
+
+        for iteration in reader_by_iterations_updated:
             # If there was a change - save the row where the change has happened
             change_row = 0 
             # Save the previous location
@@ -105,40 +109,43 @@ def test_data(input_file_name):
                 pre_vals["y"] = curr_y 
             
             # Part 3 - if a collision has happened, and it affects the drone's behaviour,
-            # it is updated and the drone is signed as a malicious drone.
+            # the iteration is removed
             collided_drones = []
             # Count the rows where a collision has happened 
-            [collided_drones.append({"row": 0, "count": 0}) for i in range (5)]
+            [collided_drones.append(0) for i in range (5)]
 
-            for r, row in enumerate(iteration):
+            for row in iteration:
                 # row[26] - collision label (1 if collision is occurring at this moment)
                 collision = int(row[26])
                 curr_drone = int(row[0][-1:]) - 1
                 if collision:
-                    # Count the collision rows and save the last collision row
-                    collided_drones[curr_drone]["row"] = r
-                    collided_drones[curr_drone]["count"] += 1
+                    # Count the collision rows
+                    collided_drones[curr_drone] += 1
 
-            # Writing all the updated data 
-            for j, row in enumerate(iteration):
-                # Get drone index
-                curr_drone = int(row[0][-1:]) - 1
+            
+            # If a drone has collided for more than 10 rows, the iteration should be removed
+            is_collision = False
+            for drone_i in range(5):
+                if collided_drones[drone_i] >= 10:
+                    is_collision = True
+            
+            # if a collision didn't happen
+            if not is_collision:
+                # Writing all the updated data 
+                for j, row in enumerate(iteration):
+                    # Get drone index
+                    curr_drone = int(row[0][-1:]) - 1
 
-                # If the drone has collided for more than 10 rows, it is assigned as a malicious drone
-                # for the rest of the iteration
-                if collided_drones[curr_drone]["count"] >= 10 and collided_drones[curr_drone]["row"] > j:
-                    row[26] = '1'
-                    row[27] = '1'
-
-                # Change the iteration index according the updated iteration list 
-                row[2] = iter_i
-                
-                # If the moments between iterations were recorded, do not rewrite these lines
-                if change_row == 0:
-                    [data[key].append(val) for key, val in zip(data.keys(), row)]
-                else:
-                    if j < change_row:
+                    # Change the iteration index according the updated iteration list 
+                    row[2] = iteration_count
+                    
+                    # If the moments between iterations were recorded, do not rewrite these lines
+                    if change_row == 0:
                         [data[key].append(val) for key, val in zip(data.keys(), row)]
+                    else:
+                        if j < change_row:
+                            [data[key].append(val) for key, val in zip(data.keys(), row)]
+                iteration_count += 1
 
     print("finished processing")
 

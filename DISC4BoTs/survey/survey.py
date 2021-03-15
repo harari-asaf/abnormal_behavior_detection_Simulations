@@ -12,10 +12,8 @@ import numpy as np
 
 """Transforming the created path to an airsim path which can be
     used by the moveOnPathAsync function later
-
 Args:
     old_path (list): the created path - list of points
-
 Returns:
     new_path (list): the new path, with the points as an airsim Vector3r with 3 coordinates
 """
@@ -31,7 +29,6 @@ class Survey(Scenario):
     A class representing the scenario of surveying a rectangle
     Each drone has its own random area to survey, therefore a different path.
     Initial positions, scenario time and route are random.
-
     Attributes:
         - Scenario Attributes
         client (airsim.MultirotorClient): the client which is connected to airsim
@@ -40,13 +37,11 @@ class Survey(Scenario):
         malicious (str): the malicious drones which represents the anomaly
         anomaly_type (str): the type of malicious behavior (none/shift/random/path)
         time_factor (int): the simulation speed is multiplied by the time factor
-
         paths (list): list of all drones' paths
         time (float): time until the scenario ends (in seconds)
         started (bool): True when the scenario has started
         started anomaly (bool): True when the anomaly has started
         start (float): the beginning time of the scenario
-
     Methods:
         goto_initial_locations(locs):
             Set the initial position for all drones according to their initial point on their path
@@ -58,7 +53,6 @@ class Survey(Scenario):
             The action for all drones to make - moving on their surveying path
         next_action_anomaly()
             The malicious action for the malicous drone to make (shift/random/path)
-
     """
     def __init__(self, _client, _drones, _initial_positions, _malicious, _anomaly_type, _time_factor=1):
         Scenario.__init__(self, _client, _drones, _initial_positions, _malicious, _anomaly_type, _time_factor)
@@ -88,7 +82,6 @@ class Survey(Scenario):
 
     """
     Set the initial positions for the drones according to the given initial positions
-
     Args:
         locs - the drones' initial locations
     
@@ -112,10 +105,8 @@ class Survey(Scenario):
     
 
     """ Check which drones are colliding with each other, if at all
-
         Args:
            None
-
         Returns:
             col_drones (list): list of drones which are currently colliding
     """

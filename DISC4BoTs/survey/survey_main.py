@@ -17,14 +17,12 @@ from configparser import ConfigParser
 
 
 """Gets the drones' current state and writes it to the data dictionary
-
 Args:
     data (dict): The dictionary containing the data
     drones (list): list of drones
     client (airsim.MultirotorClient): the monitor client used to get the drones' live data
     values (dict): a dictionary of scenario values which are created and constantly
     updated in the main program. These values are monitored and written.
-
 Returns:
     None
 """
@@ -94,7 +92,7 @@ def main():
     # If True, after getting the data it will get tested and updated by 'test.py' script
     active_data_test = config_object.get("SETTINGS", "active_data_test")
 
-    # Time until next_action() is called again and the drones' route is recalculated
+    # Time until next_action() and has_ended() is called again 
     update_cycle_time = 0.25 / sim_time_factor
 
     # headers for csv file
