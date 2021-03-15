@@ -94,7 +94,7 @@ def main():
   # If True, after getting the data it will get tested and updated by 'test.py' script
   active_data_test = config_object.get("SETTINGS", "active_data_test")
 
-  # Time until next_action() is called again and the drones' route is recalculated
+  # Time until next_action() and has_ended() is called again 
   update_cycle_time = 0.1 / sim_time_factor
 
   # headers for csv file
