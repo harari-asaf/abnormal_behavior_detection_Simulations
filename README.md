@@ -1,5 +1,5 @@
 # Abnormal Behavior Detection in a Robotic Swarm - Swarm Simulation
-Here is the code for simulating drones swarm flights,  for different scenarios, including malicious behaviours.
+Here is the code for simulating drones swarm flights with anomalies using Microsoft AirSim Simulator.
 This simulations been used in the "The Challenge of Abnormal Behavior Detection in a Robotic Swarm" paper.
 
 ## Getting Started
