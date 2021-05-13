@@ -1,5 +1,6 @@
-# DISC4BoTs
-Airsim-based drones flying simulations for different scenarios, including malicious behaviours
+# Abnormal Behavior Detection in a Robotic Swarm - Swarm Simulation
+Here is the code for simulating drones swarm flights,  for different scenarios, including malicious behaviours.
+This simulations been used in the "The Challenge of Abnormal Behavior Detection in a Robotic Swarm" paper.
 
 ## Getting Started
 First of all, make sure you have downloaded [Airsim](https://github.com/microsoft/AirSim), you got Unreal engine on your computer, and the [Blocks Enviroment](https://microsoft.github.io/AirSim/unreal_blocks/) is set up.
