@@ -1,6 +1,6 @@
-# Abnormal Behavior Detection in a Robotic Swarm - Swarm Simulation
+#RS-CAD: Collaborative Anomaly Detection in Robotic Swarms - Swarm Simulation
 Here is the code for simulating drones swarm flights with anomalies using Microsoft AirSim Simulator.
-This simulations been used in the "The Challenge of Abnormal Behavior Detection in a Robotic Swarm" paper.
+This simulations been used in the "RS-CAD: Collaborative Anomaly Detection in Robotic Swarms" paper.
 To recieve ready to use data please contect us via email. 
 
 ## Getting Started
